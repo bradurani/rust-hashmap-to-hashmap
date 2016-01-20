@@ -1,0 +1,9 @@
+[package]
+name = "hashmap_to_hashmap"
+authors = ["Brad Urani <bradurani@gmail.com>"]
+version = "0.9.0"
+description = "Adds a method .map to HashMap that maps to another HashMap"
+repository = "https://github.com/bradurani/rust-hashmap-to-hashmap"
+readme = "README.md"
+keywords = ["map", "hashmap"]
+license = "MIT"
