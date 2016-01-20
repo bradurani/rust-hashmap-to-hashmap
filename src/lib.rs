@@ -43,11 +43,11 @@ mod tests {
         h.insert(29, susan);
 
         let mut expected = HashMap::new();
-        expected.insert(1, "Brad Urani");
-        expected.insert(2, "Susan Urani");
+        expected.insert(1, "12-Brad Urani");
+        expected.insert(2, "29-Susan Urani");
 
-        let new_map = h.map(|_, v| v.id,
-                            |_, v| v.first_name.to_string() + &" " + v.last_name);
+        let new_map = h.map(|k, v| v.id,
+                            |k, v| k.to_string() + &"-" + &v.first_name + &" " + &v.last_name);
         assert_eq!(new_map.get(&1).unwrap(), expected.get(&1).unwrap());
         assert_eq!(new_map.get(&2).unwrap(), expected.get(&2).unwrap());
     }
