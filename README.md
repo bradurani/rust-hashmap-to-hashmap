@@ -1,6 +1,6 @@
 # HashMap to HashMap
 
-Adds a method .map to HashMap that maps to another HashMap
+Adds a method `.map` to HashMap that maps to another HashMap
 
 ```rust
 
